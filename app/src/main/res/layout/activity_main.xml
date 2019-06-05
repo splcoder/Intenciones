@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:fontFamily="cursive"
+		android:text="@string/strIntenciones"
+		android:textSize="64sp"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/btnOpenWeb"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="48dp"
+		android:ems="10"
+		android:text="Open web"
+		android:textAllCaps="false"
+		app:layout_constraintEnd_toEndOf="@+id/textView"
+		app:layout_constraintHorizontal_bias="0.494"
+		app:layout_constraintStart_toStartOf="@+id/textView"
+		app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+	<Button
+		android:id="@+id/btnGoogleMap"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="48dp"
+		android:ems="10"
+		android:text="Google map"
+		android:textAllCaps="false"
+		app:layout_constraintEnd_toEndOf="@+id/btnOpenWeb"
+		app:layout_constraintHorizontal_bias="0.48"
+		app:layout_constraintStart_toStartOf="@+id/btnOpenWeb"
+		app:layout_constraintTop_toBottomOf="@+id/btnOpenWeb" />
+
+	<Button
+		android:id="@+id/btnTakePhoto"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="48dp"
+		android:ems="10"
+		android:text="Tomar foto"
+		android:textAllCaps="false"
+		app:layout_constraintEnd_toEndOf="@+id/btnGoogleMap"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="@+id/btnGoogleMap"
+		app:layout_constraintTop_toBottomOf="@+id/btnGoogleMap" />
+
+	<Button
+		android:id="@+id/btnSendEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="48dp"
+		android:ems="10"
+		android:text="Enviar correo"
+		android:textAllCaps="false"
+		app:layout_constraintEnd_toEndOf="@+id/btnTakePhoto"
+		app:layout_constraintStart_toStartOf="@+id/btnTakePhoto"
+		app:layout_constraintTop_toBottomOf="@+id/btnTakePhoto" />
+
+	<Button
+		android:id="@+id/btnCall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="48dp"
+		android:ems="10"
+		android:text="Llamar por teléfono"
+		android:textAllCaps="false"
+		app:layout_constraintEnd_toEndOf="@+id/btnSendEmail"
+		app:layout_constraintHorizontal_bias="0.509"
+		app:layout_constraintStart_toStartOf="@+id/btnSendEmail"
+		app:layout_constraintTop_toBottomOf="@+id/btnSendEmail" />
+
+</android.support.constraint.ConstraintLayout>
